@@ -21,23 +21,27 @@ html {
     max-width: 100%;
     height: auto;
   }
-  body{
-    position: absolute;
-  }
+
+.header{
+    position: relative;
+}
 
 .hero{
     margin: 0 auto;
-    height: 900px;
+    padding: 270px;
 
 background: #F9F7FE;
 }
 
 .navbar{ 
-  
+    position: fixed;
     display: flex;
-    padding-top: 40px;
-    margin-left: 165px;
+    top: 40px;
+    right: 165px;
+    margin: 0;
     align-items: center;
+    background: #F9F7FE;
+    z-index: 50;
   
 }
 .menu {
@@ -65,15 +69,7 @@ transition: all .09s ease-in-out ;
 .menu a:hover{
     color: #6C63FF;
 }
-.logo{
-background: url(logo.svg);
-}
 
-.caption{
-margin: auto;
-margin-top:276px;;
-
-}
 .caption h1{
 font-family: 'Playfair Display';
 font-style: normal;
@@ -112,38 +108,31 @@ text-align: center;
 color: #272142;
 margin-bottom: 50px;
 }
-.caption button a{
-    width: 108px;
-height: 27px;
-
+.button{
 font-family: 'Poppins';
 font-style: normal;
 font-weight: 500;
 font-size: 18px;
 line-height: 27px;
 text-decoration: none;
-/* identical to box height */
 text-align: center;
-
 color: #FFFFFF;
 transition: all .09s ease-in-out ;
-}
-.caption button {
 
     display: flex;
 flex-direction: row;
 justify-content: center;
-align-items: center;
-padding: 18px 30px;
-gap: 10px;
 
+padding: 18px 46px;
+gap: 10px;
+width: 200px;
 margin: auto;
 
 background: #6C63FF;
 border-radius: 4px;
 border: none;
 }
-.caption button:hover{
+.button:hover{
     
     color: #6C63FF;
     border: 1px solid #6C63FF;
@@ -151,10 +140,7 @@ border: none;
     background-color:white;
     
 }
-.caption button a:hover{
-    color: #6C63FF;
-  
-}
+
 .main {
     width: 1160px;
     margin:0px 148px ;
@@ -326,7 +312,7 @@ margin-top: 10px;
     
     display: flex;
 }
-.media span{
+.media .fsb{
     width: 40px;
     height: 40px;
     margin: auto;
