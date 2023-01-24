@@ -29,6 +29,25 @@ html {
     height: auto;
     border-radius: 20px;
   }
+
+/* ---------------------------------------------- */
+.header{
+    position: fixed;
+   background-color: white;
+     padding-top: 40px;
+     top: 0px; 
+     left: 0px;   
+     width: 100%;
+}
+.header-1{
+  position: fixed;
+ background-color:#F9F7FE;;
+   padding-top: 40px;
+   top: 0px; 
+   left: 0px;   
+   width: 100%;
+}
+
 .container
 {
     max-width: 1140px;
@@ -37,22 +56,13 @@ html {
      box-sizing: content-box;  
 }
 
-/* ---------------------------------------------- */
+
 .navbar{
-    /* position: fixed; */
-    position: fixed;
-    
-    display: flex;
-  
-    min-height: 42px;
+   display: flex;
     align-items: center; 
-     z-index: 50;
-     background-color: white;
-     padding-top: 40px;
-  
-     top: 0px;
-     
+     z-index: 50; 
   }  
+
 
 .navbar_menu{
     padding: 0px  0px 0px 665px; 
@@ -112,21 +122,167 @@ flex-flow: row-reverse nowrap;
     color: #6C63FF;
 }
 /* ------------------------------------- */
+.hero{
+  background: #F9F7FE;
+  height: 800px;
 
+}
+.caption-1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 260px;
+}
+.caption{
+  
+font-family: 'Playfair Display';
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+line-height: 85px;
+
+color: #000000;
+padding-top: 260px;
+max-width: 800px ;
+}
+
+.caption-1 h1{
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 128px;
+  /* identical to box height */
+  color: #000000;
+  text-align: center;
+  }
+  .caption-1 h2{
+      
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 54px;
+  /* identical to box height */
+  
+  text-align: center;
+  
+  color: #272142;
+  }
+  .caption-1 h3{
+   margin-top: 24px; 
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height */
+  
+  text-align: center;
+  
+  color: #272142;
+  margin-bottom: 50px;
+  }
+  .button{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  text-decoration: none;
+  text-align: center;
+  color: #FFFFFF;
+  transition: all .09s ease-in-out ;
+  
+      display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+  padding: 18px 46px;
+  gap: 10px;
+  width: 200px;
+  margin: auto;
+  
+  background: #6C63FF;
+  border-radius: 4px;
+  border: none;
+  }
+  .button:hover{
+      
+      color: #6C63FF;
+      border: 1px solid #6C63FF;
+      border-radius: 4px;
+      background-color:white;
+      
+  }
+  .title{
+    margin: auto;
+    width: 529px;
+padding-top: 40px;
+}
+.title-portfilio{
+    
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    
+    text-align: center;
+    color: #000000;
+
+}
+.title-description{
+    
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+     white-space: auto;
+    text-align: center;
+    padding-top: 15px;
+    color: #272142; 
+
+}
+
+
+
+
+
+
+
+
+/* -------------------------------------- */
 .row{
    display: flex;
-    max-width: 1160px; 
     
-     margin: 260px auto ;
+    
+     margin: 80px auto ;
+} 
+.row-about{
+
+    margin: 260px auto ;
 } 
 
+ 
   
 .col{
     width: 50%;
+    
 }
 .col-2{
-  padding-right: 50px; 
+  padding-left: 50px; 
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+
 }
 .col-2_title{
     font-family: 'Playfair Display';
@@ -164,7 +320,9 @@ margin-top: 30px;
     font-size: 16px;
     line-height: 24px;
      margin-top: 50px ;
-    
+
+    flex: initial;
+    width: 150px ;
     text-align: center;
     
     color: #6C63FF;
@@ -186,18 +344,7 @@ margin-top: 30px;
     border-radius: 20px;
 }
 
-.caption{
-    font-family: 'Playfair Display';
-font-style: normal;
-font-weight: 700;
-font-size: 64px;
-line-height: 85px;
 
-color: #000000;
-
-margin-top: 260px;
-width: 60%;
-}
 /* ---------------------------- */
 
 .work{
@@ -316,9 +463,11 @@ margin-top: 10px;
 
 .media{
 
-    padding: 50px  auto;
+  
     display: flex;
-    margin: 0 auto;
+    justify-content: center;
+    padding: 50px 0;
+    
 }
 .fsb{
     width: 40px;
